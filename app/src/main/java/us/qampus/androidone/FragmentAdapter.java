@@ -5,6 +5,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import us.qampus.androidone.fragment.FragmentOne;
+
 public class FragmentAdapter extends AppCompatActivity {
 
     //TODO tambah 2 line di bawah
@@ -21,7 +23,7 @@ public class FragmentAdapter extends AppCompatActivity {
 
     public void setFragment(){
         if(fragment == null){
-            fragment = new BerandaFragment();
+            fragment = new FragmentOne();
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.content, fragment, null);
             fragmentTransaction.commit();
