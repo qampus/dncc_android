@@ -8,18 +8,25 @@
     tools:context="us.qampus.androidone.MainActivity">
 
     <Button
+        android:id="@+id/ButtonA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="ClickButtonA"
+        android:layout_marginBottom="20dp"
         android:text="Fragment One" />
 
     <Button
+        android:id="@+id/ButtonB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Fragment Two" />
 
     <Button
+        android:id="@+id/ButtonC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Fragment Three" />
 
 </LinearLayout>
